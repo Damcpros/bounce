@@ -58,6 +58,10 @@ UICorner_2:Destroy()
 -- Version: 3.2
 
 -- Instances:
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local BetaGUI = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -127,158 +131,14 @@ local KnitClient = debug.getupvalue(require(lplr.PlayerScripts.TS.knit).setup, 6
 local SwordCont = KnitClient.Controllers.SwordController
 local uis = game:GetService("UserInputService")
 local userInputService = game:GetService("UserInputService")
-local function toggleBlatant()
+
 	
 
 	
 
 			
-				if Frame.Visible == true then
-					Frame.Visible = false
-				elseif Frame.Visible == false then
-					Frame.Visible = true
-				end
-				if Blantant.Visible == true then
-					Blantant.Visible = false
-				elseif Blantant.Visible == false then
-					Blantant.Visible = true
-				end
-				if Bypass.Visible == true then
-					Bypass.Visible = false
-				elseif Bypass.Visible == false then
-					Bypass.Visible = true
-				end
-				if beta.Visible == true then
-					beta.Visible = false
-				elseif beta.Visible == false then
-					beta.Visible = true
-				end
-				if Updates.Visible == true then
-					Updates.Visible = false
-				elseif Updates.Visible == false then
-					Updates.Visible = true
-				end
-				if utility.Visible == true then
-					utility.Visible = false
-				elseif utility.Visible == false then
-					utility.Visible = true
-				end
-				if Render.Visible == true then
-					Render.Visible = false
-				elseif Render.Visible == false then
-					Render.Visible = true
-				end
-				if TextButton.Visible == true then
-					TextButton.Visible = false
-				elseif TextButton.Visible == false then
-					TextButton.Visible = true
 				
-	end
-	if Status.Visible == true then
-		Status.Visible = false
-	elseif Status.Visible == false then
-		Status.Visible = true
-	end
-	if Credits.Visible == true then
-		Credits.Visible = false
-	elseif Credits.Visible == false then
-		Credits.Visible = true
-	end
-	if Semiback.Visible == true then
-		Semiback.Visible = false
-	elseif Semiback.Visible == false then
-		Semiback.Visible = true
-	end
-	if KillAura.Visible == true then
-		KillAura.Visible = false
-	elseif KillAura.Visible == false then
-		KillAura.Visible = true
-	end
-	if Flight.Visible == true then
-		Flight.Visible = false
-	elseif Flight.Visible == false then
-		Flight.Visible = true
-	end
-	if Speed.Visible == true then
-		Speed.Visible = false
-	elseif Speed.Visible == false then
-		Speed.Visible = true
-	end
-	if LongJump.Visible == true then
-		LongJump.Visible = false
-	elseif LongJump.Visible == false then
-		LongJump.Visible = true
-	end
-	if AnticheatBypass.Visible == true then
-		AnticheatBypass.Visible = false
-	elseif AnticheatBypass.Visible == false then
-		AnticheatBypass.Visible = true
-	end
-	if NoFall.Visible == true then
-		NoFall.Visible = false
-	elseif NoFall.Visible == false then
-		NoFall.Visible = true
-	end
-	if gravity.Visible == true then
-		gravity.Visible = false
-	elseif gravity.Visible == false then
-		gravity.Visible = true
-	end
-	if DinoExploit.Visible == true then
-		DinoExploit.Visible = false
-	elseif DinoExploit.Visible == false then
-		DinoExploit.Visible = true
-	end
-	if AntiFall.Visible == true then
-		AntiFall.Visible = false
-	elseif AntiFall.Visible == false then
-		AntiFall.Visible = true
-	end
-	if Keybind1.Visible == true then
-		Keybind1.Visible = false
-	elseif Keybind1.Visible == false then
-		Keybind1.Visible = true
-	end
-	if Keybind2.Visible == true then
-		Keybind2.Visible = false
-	elseif Keybind2.Visible == false then
-		Keybind2.Visible = true
-	end
-	if Keybind3.Visible == true then
-		Keybind3.Visible = false
-	elseif Keybind3.Visible == false then
-		Keybind3.Visible = true
-	end
-	if Keybind4.Visible == true then
-		Keybind4.Visible = false
-	elseif Keybind4.Visible == false then
-		Keybind4.Visible = true
-	end
-	if Keybind5.Visible == true then
-		Keybind5.Visible = false
-	elseif Keybind5.Visible == false then
-		Keybind5.Visible = true
-	end
-	if Keybind6.Visible == true then
-		Keybind6.Visible = false
-	elseif Keybind6.Visible == false then
-		Keybind6.Visible = true
-	end
-	if Keybind7.Visible == true then
-		Keybind7.Visible = false
-	elseif Keybind7.Visible == false then
-		Keybind7.Visible = true
-	end
-	if Keybind8.Visible == true then
-		Keybind8.Visible = false
-	elseif Keybind8.Visible == false then
-		Keybind8.Visible = true
-	end
-	if Keybind9.Visible == true then
-		Keybind9.Visible = false
-	elseif Keybind9.Visible == false then
-		Keybind9.Visible = true
-	end
+
 		
 
 
@@ -286,7 +146,151 @@ userInputService.InputBegan:Connect(function(input, gameProcessedEvent)
 
 	if input.UserInputType == Enum.UserInputType then
 		if input.KeyCode == Enum.KeyCode.F then
-			toggleBlatant()
+			if Frame.Visible == true then
+				Frame.Visible = false
+			elseif Frame.Visible == false then
+				Frame.Visible = true
+			end
+			if Blantant.Visible == true then
+				Blantant.Visible = false
+			elseif Blantant.Visible == false then
+				Blantant.Visible = true
+			end
+			if Bypass.Visible == true then
+				Bypass.Visible = false
+			elseif Bypass.Visible == false then
+				Bypass.Visible = true
+			end
+			if beta.Visible == true then
+				beta.Visible = false
+			elseif beta.Visible == false then
+				beta.Visible = true
+			end
+			if Updates.Visible == true then
+				Updates.Visible = false
+			elseif Updates.Visible == false then
+				Updates.Visible = true
+			end
+			if utility.Visible == true then
+				utility.Visible = false
+			elseif utility.Visible == false then
+				utility.Visible = true
+			end
+			if Render.Visible == true then
+				Render.Visible = false
+			elseif Render.Visible == false then
+				Render.Visible = true
+			end
+			if TextButton.Visible == true then
+				TextButton.Visible = false
+			elseif TextButton.Visible == false then
+				TextButton.Visible = true
+
+			end
+			if Status.Visible == true then
+				Status.Visible = false
+			elseif Status.Visible == false then
+				Status.Visible = true
+			end
+			if Credits.Visible == true then
+				Credits.Visible = false
+			elseif Credits.Visible == false then
+				Credits.Visible = true
+			end
+			if Semiback.Visible == true then
+				Semiback.Visible = false
+			elseif Semiback.Visible == false then
+				Semiback.Visible = true
+			end
+			if KillAura.Visible == true then
+				KillAura.Visible = false
+			elseif KillAura.Visible == false then
+				KillAura.Visible = true
+			end
+			if Flight.Visible == true then
+				Flight.Visible = false
+			elseif Flight.Visible == false then
+				Flight.Visible = true
+			end
+			if Speed.Visible == true then
+				Speed.Visible = false
+			elseif Speed.Visible == false then
+				Speed.Visible = true
+			end
+			if LongJump.Visible == true then
+				LongJump.Visible = false
+			elseif LongJump.Visible == false then
+				LongJump.Visible = true
+			end
+			if AnticheatBypass.Visible == true then
+				AnticheatBypass.Visible = false
+			elseif AnticheatBypass.Visible == false then
+				AnticheatBypass.Visible = true
+			end
+			if NoFall.Visible == true then
+				NoFall.Visible = false
+			elseif NoFall.Visible == false then
+				NoFall.Visible = true
+			end
+			if gravity.Visible == true then
+				gravity.Visible = false
+			elseif gravity.Visible == false then
+				gravity.Visible = true
+			end
+			if DinoExploit.Visible == true then
+				DinoExploit.Visible = false
+			elseif DinoExploit.Visible == false then
+				DinoExploit.Visible = true
+			end
+			if AntiFall.Visible == true then
+				AntiFall.Visible = false
+			elseif AntiFall.Visible == false then
+				AntiFall.Visible = true
+			end
+			if Keybind1.Visible == true then
+				Keybind1.Visible = false
+			elseif Keybind1.Visible == false then
+				Keybind1.Visible = true
+			end
+			if Keybind2.Visible == true then
+				Keybind2.Visible = false
+			elseif Keybind2.Visible == false then
+				Keybind2.Visible = true
+			end
+			if Keybind3.Visible == true then
+				Keybind3.Visible = false
+			elseif Keybind3.Visible == false then
+				Keybind3.Visible = true
+			end
+			if Keybind4.Visible == true then
+				Keybind4.Visible = false
+			elseif Keybind4.Visible == false then
+				Keybind4.Visible = true
+			end
+			if Keybind5.Visible == true then
+				Keybind5.Visible = false
+			elseif Keybind5.Visible == false then
+				Keybind5.Visible = true
+			end
+			if Keybind6.Visible == true then
+				Keybind6.Visible = false
+			elseif Keybind6.Visible == false then
+				Keybind6.Visible = true
+			end
+			if Keybind7.Visible == true then
+				Keybind7.Visible = false
+			elseif Keybind7.Visible == false then
+				Keybind7.Visible = true
+			end
+			if Keybind8.Visible == true then
+				Keybind8.Visible = false
+			elseif Keybind8.Visible == false then
+				Keybind8.Visible = true
+			end
+			if Keybind9.Visible == true then
+				Keybind9.Visible = false
+			elseif Keybind9.Visible == false then
+				Keybind9.Visible = true
 		end
 	end
 end)
@@ -816,6 +820,7 @@ Keybind9.TextColor3 = Color3.fromRGB(0, 0, 0)
 Keybind9.TextSize = 14.000
 
 UICorner_29.Parent = Keybind9
+
 -- Gui to Lua
 -- Version: 3.2
 
