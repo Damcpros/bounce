@@ -1,0 +1,865 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local LaunchNotification = Instance.new("ScreenGui")
+local LaunchFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local LaunchFrameTop = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Note = Instance.new("TextLabel")
+
+--Properties:
+
+LaunchNotification.Name = "LaunchNotification"
+LaunchNotification.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+LaunchFrame.Name = "LaunchFrame"
+LaunchFrame.Parent = LaunchNotification
+LaunchFrame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+LaunchFrame.Position = UDim2.new(0.370049506, 0, 0.0266021788, 0)
+LaunchFrame.Size = UDim2.new(0, 420, 0, 62)
+
+UICorner.CornerRadius = UDim.new(0, 1)
+UICorner.Parent = LaunchFrame
+
+LaunchFrameTop.Name = "LaunchFrameTop"
+LaunchFrameTop.Parent = LaunchNotification
+LaunchFrameTop.BackgroundColor3 = Color3.fromRGB(5, 62, 147)
+LaunchFrameTop.Position = UDim2.new(0.370049506, 0, 0.0266021769, 0)
+LaunchFrameTop.Size = UDim2.new(0, 420, 0, 14)
+
+UICorner_2.CornerRadius = UDim.new(0, 1)
+UICorner_2.Parent = LaunchFrameTop
+
+Note.Name = "Note"
+Note.Parent = LaunchNotification
+Note.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Note.BackgroundTransparency = 1.000
+Note.Position = UDim2.new(0.370049506, 0, 0.043530833, 0)
+Note.Size = UDim2.new(0, 419, 0, 48)
+Note.Font = Enum.Font.SourceSans
+Note.Text = "Bounce has successfuly loaded!"
+Note.TextColor3 = Color3.fromRGB(17, 112, 255)
+Note.TextScaled = true
+Note.TextSize = 14.000
+Note.TextWrapped = true
+
+wait(5)
+
+Note:Destroy()
+LaunchFrame:Destroy()
+LaunchNotification:Destroy()
+UICorner:Destroy()
+LaunchFrameTop:Destroy()
+UICorner_2:Destroy()
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BetaGUI = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Blantant = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Bypass = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local beta = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Updates = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local utility = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Render = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Status = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Credits = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local Semiback = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local KillAura = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Flight = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Speed = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local LongJump = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local AnticheatBypass = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local NoFall = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local gravity = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local DinoExploit = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local AntiFall = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Keybind1 = Instance.new("TextBox")
+local UICorner_21 = Instance.new("UICorner")
+local Keybind2 = Instance.new("TextBox")
+local UICorner_22 = Instance.new("UICorner")
+local Keybind3 = Instance.new("TextBox")
+local UICorner_23 = Instance.new("UICorner")
+local Keybind4 = Instance.new("TextBox")
+local UICorner_24 = Instance.new("UICorner")
+local Keybind5 = Instance.new("TextBox")
+local UICorner_25 = Instance.new("UICorner")
+local Keybind6 = Instance.new("TextBox")
+local UICorner_26 = Instance.new("UICorner")
+local Keybind7 = Instance.new("TextBox")
+local UICorner_27 = Instance.new("UICorner")
+local Keybind8 = Instance.new("TextBox")
+local UICorner_28 = Instance.new("UICorner")
+local Keybind9 = Instance.new("TextBox")
+local UICorner_29 = Instance.new("UICorner")
+local entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustDxrk/Vxpe-Entity/main/Vxpe%20Entity", true))()
+local player = game:GetService("Players")
+local lplr = player.LocalPlayer
+local cam = workspace.CurrentCamera
+local KnitClient = debug.getupvalue(require(lplr.PlayerScripts.TS.knit).setup, 6)
+local SwordCont = KnitClient.Controllers.SwordController
+local uis = game:GetService("UserInputService")
+local userInputService = game:GetService("UserInputService")
+local function toggleBlatant()
+	
+
+	
+
+			
+				if Frame.Visible == true then
+					Frame.Visible = false
+				elseif Frame.Visible == false then
+					Frame.Visible = true
+				end
+				if Blantant.Visible == true then
+					Blantant.Visible = false
+				elseif Blantant.Visible == false then
+					Blantant.Visible = true
+				end
+				if Bypass.Visible == true then
+					Bypass.Visible = false
+				elseif Bypass.Visible == false then
+					Bypass.Visible = true
+				end
+				if beta.Visible == true then
+					beta.Visible = false
+				elseif beta.Visible == false then
+					beta.Visible = true
+				end
+				if Updates.Visible == true then
+					Updates.Visible = false
+				elseif Updates.Visible == false then
+					Updates.Visible = true
+				end
+				if utility.Visible == true then
+					utility.Visible = false
+				elseif utility.Visible == false then
+					utility.Visible = true
+				end
+				if Render.Visible == true then
+					Render.Visible = false
+				elseif Render.Visible == false then
+					Render.Visible = true
+				end
+				if TextButton.Visible == true then
+					TextButton.Visible = false
+				elseif TextButton.Visible == false then
+					TextButton.Visible = true
+				
+	end
+	if Status.Visible == true then
+		Status.Visible = false
+	elseif Status.Visible == false then
+		Status.Visible = true
+	end
+	if Credits.Visible == true then
+		Credits.Visible = false
+	elseif Credits.Visible == false then
+		Credits.Visible = true
+	end
+	if Semiback.Visible == true then
+		Semiback.Visible = false
+	elseif Semiback.Visible == false then
+		Semiback.Visible = true
+	end
+	if KillAura.Visible == true then
+		KillAura.Visible = false
+	elseif KillAura.Visible == false then
+		KillAura.Visible = true
+	end
+	if Flight.Visible == true then
+		Flight.Visible = false
+	elseif Flight.Visible == false then
+		Flight.Visible = true
+	end
+	if Speed.Visible == true then
+		Speed.Visible = false
+	elseif Speed.Visible == false then
+		Speed.Visible = true
+	end
+	if LongJump.Visible == true then
+		LongJump.Visible = false
+	elseif LongJump.Visible == false then
+		LongJump.Visible = true
+	end
+	if AnticheatBypass.Visible == true then
+		AnticheatBypass.Visible = false
+	elseif AnticheatBypass.Visible == false then
+		AnticheatBypass.Visible = true
+	end
+	if NoFall.Visible == true then
+		NoFall.Visible = false
+	elseif NoFall.Visible == false then
+		NoFall.Visible = true
+	end
+	if gravity.Visible == true then
+		gravity.Visible = false
+	elseif gravity.Visible == false then
+		gravity.Visible = true
+	end
+	if DinoExploit.Visible == true then
+		DinoExploit.Visible = false
+	elseif DinoExploit.Visible == false then
+		DinoExploit.Visible = true
+	end
+	if AntiFall.Visible == true then
+		AntiFall.Visible = false
+	elseif AntiFall.Visible == false then
+		AntiFall.Visible = true
+	end
+	if Keybind1.Visible == true then
+		Keybind1.Visible = false
+	elseif Keybind1.Visible == false then
+		Keybind1.Visible = true
+	end
+	if Keybind2.Visible == true then
+		Keybind2.Visible = false
+	elseif Keybind2.Visible == false then
+		Keybind2.Visible = true
+	end
+	if Keybind3.Visible == true then
+		Keybind3.Visible = false
+	elseif Keybind3.Visible == false then
+		Keybind3.Visible = true
+	end
+	if Keybind4.Visible == true then
+		Keybind4.Visible = false
+	elseif Keybind4.Visible == false then
+		Keybind4.Visible = true
+	end
+	if Keybind5.Visible == true then
+		Keybind5.Visible = false
+	elseif Keybind5.Visible == false then
+		Keybind5.Visible = true
+	end
+	if Keybind6.Visible == true then
+		Keybind6.Visible = false
+	elseif Keybind6.Visible == false then
+		Keybind6.Visible = true
+	end
+	if Keybind7.Visible == true then
+		Keybind7.Visible = false
+	elseif Keybind7.Visible == false then
+		Keybind7.Visible = true
+	end
+	if Keybind8.Visible == true then
+		Keybind8.Visible = false
+	elseif Keybind8.Visible == false then
+		Keybind8.Visible = true
+	end
+	if Keybind9.Visible == true then
+		Keybind9.Visible = false
+	elseif Keybind9.Visible == false then
+		Keybind9.Visible = true
+	end
+		
+
+
+userInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+
+	if input.UserInputType == Enum.UserInputType then
+		if input.KeyCode == Enum.KeyCode.F then
+			toggleBlatant()
+		end
+	end
+end)
+
+
+--Properties:
+
+BetaGUI.Name = "BetaGUI"
+BetaGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = BetaGUI
+Frame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.220773995, 0, 0.137844607, 0)
+Frame.Size = UDim2.new(0, 921, 0, 573)
+
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = Frame
+
+Blantant.Name = "Blantant"
+Blantant.Parent = BetaGUI
+Blantant.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Blantant.BackgroundTransparency = 0.700
+Blantant.Position = UDim2.new(0.611185908, 0, 0.189880729, 0)
+Blantant.Size = UDim2.new(0, 261, 0, 39)
+Blantant.Font = Enum.Font.IndieFlower
+Blantant.Text = "blatant"
+Blantant.TextColor3 = Color3.fromRGB(4, 107, 217)
+Blantant.TextScaled = true
+Blantant.TextSize = 14.000
+Blantant.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Blantant.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = Blantant
+
+Bypass.Name = "Bypass"
+Bypass.Parent = BetaGUI
+Bypass.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Bypass.BackgroundTransparency = 0.800
+Bypass.Position = UDim2.new(0.608805776, 0, 0.271754026, 0)
+Bypass.Size = UDim2.new(0, 261, 0, 39)
+Bypass.Font = Enum.Font.IndieFlower
+Bypass.Text = "bypass"
+Bypass.TextColor3 = Color3.fromRGB(4, 107, 217)
+Bypass.TextScaled = true
+Bypass.TextSize = 14.000
+Bypass.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Bypass.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = Bypass
+
+beta.Name = "beta"
+beta.Parent = BetaGUI
+beta.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+beta.BackgroundTransparency = 0.800
+beta.Position = UDim2.new(0.609317064, 0, 0.350986362, 0)
+beta.Size = UDim2.new(0, 261, 0, 39)
+beta.Font = Enum.Font.IndieFlower
+beta.Text = "beta"
+beta.TextColor3 = Color3.fromRGB(4, 107, 217)
+beta.TextScaled = true
+beta.TextSize = 14.000
+beta.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+beta.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_4.Parent = beta
+
+Updates.Name = "Updates"
+Updates.Parent = BetaGUI
+Updates.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Updates.BackgroundTransparency = 0.800
+Updates.Position = UDim2.new(0.610295534, 0, 0.428439587, 0)
+Updates.Size = UDim2.new(0, 262, 0, 39)
+Updates.Font = Enum.Font.IndieFlower
+Updates.Text = "updates"
+Updates.TextColor3 = Color3.fromRGB(4, 107, 217)
+Updates.TextScaled = true
+Updates.TextSize = 14.000
+Updates.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Updates.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_5.Parent = Updates
+
+utility.Name = "utility"
+utility.Parent = BetaGUI
+utility.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+utility.BackgroundTransparency = 0.800
+utility.Position = UDim2.new(0.611032963, 0, 0.51013571, 0)
+utility.Size = UDim2.new(0, 261, 0, 39)
+utility.Font = Enum.Font.IndieFlower
+utility.Text = "utility"
+utility.TextColor3 = Color3.fromRGB(4, 107, 217)
+utility.TextScaled = true
+utility.TextSize = 14.000
+utility.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+utility.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_6.Parent = utility
+
+Render.Name = "Render"
+Render.Parent = BetaGUI
+Render.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Render.BackgroundTransparency = 0.800
+Render.Position = UDim2.new(0.610865057, 0, 0.584949434, 0)
+Render.Size = UDim2.new(0, 261, 0, 39)
+Render.Font = Enum.Font.IndieFlower
+Render.Text = "Render"
+Render.TextColor3 = Color3.fromRGB(4, 107, 217)
+Render.TextScaled = true
+Render.TextSize = 14.000
+Render.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Render.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_7.Parent = Render
+
+TextButton.Parent = BetaGUI
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.583030343, 0, 0.708020091, 0)
+TextButton.Size = UDim2.new(0, 170, 0, 39)
+TextButton.Visible = false
+TextButton.Font = Enum.Font.IndieFlower
+TextButton.Text = "premium"
+TextButton.TextColor3 = Color3.fromRGB(4, 107, 217)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_8.Parent = TextButton
+
+Status.Name = "Status"
+Status.Parent = BetaGUI
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 1.000
+Status.Position = UDim2.new(0.565555811, 0, 0.71105206, 0)
+Status.Size = UDim2.new(0, 377, 0, 108)
+Status.Font = Enum.Font.IndieFlower
+Status.Text = "Bounce"
+Status.TextColor3 = Color3.fromRGB(4, 107, 217)
+Status.TextScaled = true
+Status.TextSize = 14.000
+Status.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Status.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_9.Parent = Status
+
+Credits.Name = "Credits"
+Credits.Parent = BetaGUI
+Credits.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BackgroundTransparency = 0.800
+Credits.Position = UDim2.new(0.610135138, 0, 0.670673072, 0)
+Credits.Size = UDim2.new(0, 260, 0, 34)
+Credits.Font = Enum.Font.IndieFlower
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(4, 107, 217)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_10.Parent = Credits
+
+Frame_2.Parent = BetaGUI
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(0.581212163, 0, 0.190476194, 0)
+Frame_2.Size = UDim2.new(0, 16, 0, 453)
+
+Semiback.Name = "Semiback"
+Semiback.Parent = BetaGUI
+Semiback.BackgroundColor3 = Color3.fromRGB(2, 175, 255)
+Semiback.BackgroundTransparency = 0.600
+Semiback.Position = UDim2.new(0.255824178, 0, 0.175438583, 0)
+Semiback.Size = UDim2.new(0, 398, 0, 477)
+Semiback.ZIndex = 2
+
+UICorner_11.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_11.Parent = Semiback
+
+KillAura.Name = "KillAura"
+KillAura.Parent = BetaGUI
+KillAura.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+KillAura.BackgroundTransparency = 0.700
+KillAura.Position = UDim2.new(0.270062834, 0, 0.189135149, 0)
+KillAura.Size = UDim2.new(0, 158, 0, 38)
+KillAura.ZIndex = 2
+KillAura.Font = Enum.Font.Fantasy
+KillAura.Text = "killaura"
+KillAura.TextColor3 = Color3.fromRGB(0, 176, 176)
+KillAura.TextScaled = true
+KillAura.TextSize = 14.000
+KillAura.TextWrapped = true
+KillAura.MouseButton1Down:Connect(function()
+	local aura = false
+	local DistVal = {["Value"] = 14}
+	local function Aura()
+		for i,v in pairs(game.Players:GetChildren()) do
+			if v.Character and v.Name ~= game.Players.LocalPlayer.Name and v.Character:FindFirstChild("HumanoidRootPart") then
+				local mag = (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+				if mag <= DistVal["Value"] and v.Team ~= game.Players.LocalPlayer.Team and v.Character:FindFirstChild("Humanoid") then
+					if v.Character.Humanoid.Health > 0 then
+						aura = true
+						SwordCont:swingSwordAtMouse()
+					end
+				end
+			end
+		end
+	end
+
+	game:GetService("RunService").Stepped:connect(function()
+		Aura()
+	end)
+end)
+
+UICorner_12.Parent = KillAura
+
+Flight.Name = "Flight"
+Flight.Parent = BetaGUI
+Flight.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Flight.BackgroundTransparency = 0.700
+Flight.Position = UDim2.new(0.269622833, 0, 0.244621515, 0)
+Flight.Size = UDim2.new(0, 158, 0, 38)
+Flight.ZIndex = 2
+Flight.Font = Enum.Font.Fantasy
+Flight.Text = "flight"
+Flight.TextColor3 = Color3.fromRGB(0, 176, 176)
+Flight.TextScaled = true
+Flight.TextSize = 14.000
+Flight.TextWrapped = true
+
+UICorner_13.Parent = Flight
+
+Speed.Name = "Speed"
+Speed.Parent = BetaGUI
+Speed.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Speed.BackgroundTransparency = 0.700
+Speed.Position = UDim2.new(0.270062834, 0, 0.304379433, 0)
+Speed.Size = UDim2.new(0, 158, 0, 38)
+Speed.ZIndex = 2
+Speed.Font = Enum.Font.Fantasy
+Speed.Text = "speed"
+Speed.TextColor3 = Color3.fromRGB(0, 176, 176)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+	Speed.TextWrapped = true
+	Speed.MouseButton1Down:Connect(function()
+		function isNumber(str)
+			if tonumber(str) ~= nil or str == 'inf' then
+				return true
+			end
+		end
+		local tspeed = 0.185
+		local hb = game:GetService("RunService").Heartbeat
+		local tpwalking = true
+		local player = game:GetService("Players")
+		local lplr = player.LocalPlayer
+		local chr = lplr.Character
+		local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+		while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+			if hum.MoveDirection.Magnitude > 0 then
+				if tspeed and isNumber(tspeed) then
+					chr:TranslateBy(hum.MoveDirection * tonumber(tspeed))
+				else
+					chr:TranslateBy(hum.MoveDirection)
+				end
+			end
+		end
+	end)
+
+UICorner_14.Parent = Speed
+
+LongJump.Name = "LongJump"
+LongJump.Parent = BetaGUI
+LongJump.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LongJump.BackgroundTransparency = 0.700
+LongJump.Position = UDim2.new(0.270062834, 0, 0.365782946, 0)
+LongJump.Size = UDim2.new(0, 158, 0, 38)
+LongJump.ZIndex = 2
+LongJump.Font = Enum.Font.Fantasy
+LongJump.Text = "longjump"
+LongJump.TextColor3 = Color3.fromRGB(0, 176, 176)
+LongJump.TextScaled = true
+LongJump.TextSize = 14.000
+LongJump.TextWrapped = true
+
+UICorner_15.Parent = LongJump
+
+AnticheatBypass.Name = "AnticheatBypass"
+AnticheatBypass.Parent = BetaGUI
+AnticheatBypass.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AnticheatBypass.BackgroundTransparency = 0.700
+AnticheatBypass.Position = UDim2.new(0.270062834, 0, 0.429692745, 0)
+AnticheatBypass.Size = UDim2.new(0, 158, 0, 38)
+AnticheatBypass.ZIndex = 2
+AnticheatBypass.Font = Enum.Font.Fantasy
+AnticheatBypass.Text = "AnticheatBypass"
+AnticheatBypass.TextColor3 = Color3.fromRGB(0, 176, 176)
+AnticheatBypass.TextScaled = true
+AnticheatBypass.TextSize = 14.000
+AnticheatBypass.TextWrapped = true
+
+UICorner_16.Parent = AnticheatBypass
+
+NoFall.Name = "NoFall"
+NoFall.Parent = BetaGUI
+NoFall.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NoFall.BackgroundTransparency = 0.700
+NoFall.Position = UDim2.new(0.269456774, 0, 0.48984313, 0)
+NoFall.Size = UDim2.new(0, 158, 0, 38)
+NoFall.ZIndex = 2
+NoFall.Font = Enum.Font.Fantasy
+NoFall.Text = "NoFall"
+NoFall.TextColor3 = Color3.fromRGB(0, 176, 176)
+NoFall.TextScaled = true
+NoFall.TextSize = 14.000
+	NoFall.TextWrapped = true
+	NoFall.MouseButton1Down:Connect(function()
+		local nofall = true
+			if nofall then
+				spawn(function()
+					repeat
+						wait()
+						if nofall == false then
+							return end
+
+						game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.GroundHit:FireServer()
+					until nofall == false
+	end)
+
+UICorner_17.Parent = NoFall
+
+gravity.Name = "gravity"
+gravity.Parent = BetaGUI
+gravity.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+gravity.BackgroundTransparency = 0.700
+gravity.Position = UDim2.new(0.269544005, 0, 0.608319461, 0)
+gravity.Size = UDim2.new(0, 158, 0, 38)
+gravity.ZIndex = 2
+gravity.Font = Enum.Font.Fantasy
+gravity.Text = "gravity"
+gravity.TextColor3 = Color3.fromRGB(0, 176, 176)
+gravity.TextScaled = true
+gravity.TextSize = 14.000
+gravity.TextWrapped = true
+
+UICorner_18.Parent = gravity
+
+DinoExploit.Name = "DinoExploit"
+DinoExploit.Parent = BetaGUI
+DinoExploit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DinoExploit.BackgroundTransparency = 0.700
+DinoExploit.Position = UDim2.new(0.269456774, 0, 0.544981003, 0)
+DinoExploit.Size = UDim2.new(0, 158, 0, 38)
+DinoExploit.ZIndex = 2
+DinoExploit.Font = Enum.Font.Fantasy
+DinoExploit.Text = "DinoExploit"
+DinoExploit.TextColor3 = Color3.fromRGB(0, 176, 176)
+DinoExploit.TextScaled = true
+DinoExploit.TextSize = 14.000
+DinoExploit.TextWrapped = true
+
+UICorner_19.Parent = DinoExploit
+
+AntiFall.Name = "AntiFall"
+AntiFall.Parent = BetaGUI
+AntiFall.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AntiFall.BackgroundTransparency = 0.700
+AntiFall.Position = UDim2.new(0.269544005, 0, 0.669722915, 0)
+AntiFall.Size = UDim2.new(0, 158, 0, 38)
+AntiFall.ZIndex = 2
+AntiFall.Font = Enum.Font.Fantasy
+AntiFall.Text = "AntiFall"
+AntiFall.TextColor3 = Color3.fromRGB(0, 176, 176)
+AntiFall.TextScaled = true
+AntiFall.TextSize = 14.000
+	AntiFall.TextWrapped = true
+	AntiFall.MouseButton1Down:Connect(function()
+		local antivoidpart = Instance.new("Part", Workspace)
+		antivoidpart.Name = "AntiVoidV2"
+		antivoidpart.Size = Vector3.new(2100, 0.5, 2000)
+		antivoidpart.Position = Vector3.new(160.5, 25, 247.5)
+		antivoidpart.Transparency = 0.4
+		antivoidpart.Anchored = true
+		antivoidpart.Touched:connect(function(touchedvoid)
+			if touchedvoid.Parent:FindFirstChild("Humanoid") and touchedvoid.Parent.Name == lplr.Name then
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+				wait(0.2)
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+				wait(0.2)
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+			end
+	end)
+
+UICorner_20.Parent = AntiFall
+
+Keybind1.Name = "Keybind1"
+Keybind1.Parent = BetaGUI
+Keybind1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Keybind1.BackgroundTransparency = 0.700
+Keybind1.Position = UDim2.new(0.401702791, 0, 0.190476179, 0)
+Keybind1.Size = UDim2.new(0, 39, 0, 35)
+Keybind1.ZIndex = 2
+Keybind1.Font = Enum.Font.SourceSans
+Keybind1.Text = ""
+Keybind1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind1.TextSize = 14.000
+
+UICorner_21.Parent = Keybind1
+
+Keybind2.Name = "Keybind2"
+Keybind2.Parent = BetaGUI
+Keybind2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Keybind2.BackgroundTransparency = 0.700
+Keybind2.Position = UDim2.new(0.401702791, 0, 0.246098906, 0)
+Keybind2.Size = UDim2.new(0, 39, 0, 35)
+Keybind2.ZIndex = 2
+Keybind2.Font = Enum.Font.SourceSans
+Keybind2.Text = ""
+Keybind2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind2.TextSize = 14.000
+
+UICorner_22.Parent = Keybind2
+
+Keybind3.Name = "Keybind3"
+Keybind3.Parent = BetaGUI
+Keybind3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Keybind3.BackgroundTransparency = 0.700
+Keybind3.Position = UDim2.new(0.401702791, 0, 0.3077676, 0)
+Keybind3.Size = UDim2.new(0, 39, 0, 35)
+Keybind3.ZIndex = 2
+Keybind3.Font = Enum.Font.SourceSans
+Keybind3.Text = ""
+Keybind3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind3.TextSize = 14.000
+
+UICorner_23.Parent = Keybind3
+
+Keybind4.Name = "Keybind4"
+Keybind4.Parent = BetaGUI
+Keybind4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Keybind4.BackgroundTransparency = 0.700
+Keybind4.Position = UDim2.new(0.401702791, 0, 0.367017895, 0)
+Keybind4.Size = UDim2.new(0, 39, 0, 35)
+Keybind4.ZIndex = 2
+Keybind4.Font = Enum.Font.SourceSans
+Keybind4.Text = ""
+Keybind4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind4.TextSize = 14.000
+
+UICorner_24.Parent = Keybind4
+
+Keybind5.Name = "Keybind5"
+Keybind5.Parent = BetaGUI
+Keybind5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Keybind5.BackgroundTransparency = 0.700
+Keybind5.Position = UDim2.new(0.401702791, 0, 0.428686589, 0)
+Keybind5.Size = UDim2.new(0, 39, 0, 35)
+Keybind5.ZIndex = 2
+Keybind5.Font = Enum.Font.SourceSans
+Keybind5.Text = ""
+Keybind5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind5.TextSize = 14.000
+
+UICorner_25.Parent = Keybind5
+
+Keybind6.Name = "Keybind6"
+Keybind6.Parent = BetaGUI
+Keybind6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Keybind6.BackgroundTransparency = 0.700
+Keybind6.Position = UDim2.new(0.401702791, 0, 0.491564453, 0)
+Keybind6.Size = UDim2.new(0, 39, 0, 35)
+Keybind6.ZIndex = 2
+Keybind6.Font = Enum.Font.SourceSans
+Keybind6.Text = ""
+Keybind6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind6.TextSize = 14.000
+
+UICorner_26.Parent = Keybind6
+
+Keybind7.Name = "Keybind7"
+Keybind7.Parent = BetaGUI
+Keybind7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Keybind7.BackgroundTransparency = 0.700
+Keybind7.Position = UDim2.new(0.401702791, 0, 0.54597801, 0)
+Keybind7.Size = UDim2.new(0, 39, 0, 35)
+Keybind7.ZIndex = 2
+Keybind7.Font = Enum.Font.SourceSans
+Keybind7.Text = ""
+Keybind7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind7.TextSize = 14.000
+
+UICorner_27.Parent = Keybind7
+
+Keybind8.Name = "Keybind8"
+Keybind8.Parent = BetaGUI
+Keybind8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Keybind8.BackgroundTransparency = 0.700
+Keybind8.Position = UDim2.new(0.401702791, 0, 0.611274242, 0)
+Keybind8.Size = UDim2.new(0, 39, 0, 35)
+Keybind8.ZIndex = 2
+Keybind8.Font = Enum.Font.SourceSans
+Keybind8.Text = ""
+Keybind8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind8.TextSize = 14.000
+
+UICorner_28.Parent = Keybind8
+
+Keybind9.Name = "Keybind9"
+Keybind9.Parent = BetaGUI
+Keybind9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Keybind9.BackgroundTransparency = 0.700
+Keybind9.Position = UDim2.new(0.401702791, 0, 0.672942936, 0)
+Keybind9.Size = UDim2.new(0, 39, 0, 35)
+Keybind9.ZIndex = 2
+Keybind9.Font = Enum.Font.SourceSans
+Keybind9.Text = ""
+Keybind9.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keybind9.TextSize = 14.000
+
+UICorner_29.Parent = Keybind9
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Stats = Instance.new("ScreenGui")
+local StatsFrame = Instance.new("Frame")
+local StatsTop = Instance.new("Frame")
+local SpeedLabel = Instance.new("TextLabel")
+
+--Properties:
+
+Stats.Name = "Stats"
+Stats.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+StatsFrame.Name = "StatsFrame"
+StatsFrame.Parent = Stats
+StatsFrame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+StatsFrame.Position = UDim2.new(0.825077415, 0, 0.922611833, 0)
+StatsFrame.Size = UDim2.new(0, 217, 0, 55)
+
+StatsTop.Name = "StatsTop"
+StatsTop.Parent = Stats
+StatsTop.BackgroundColor3 = Color3.fromRGB(5, 62, 147)
+StatsTop.Position = UDim2.new(0.825077415, 0, 0.922611833, 0)
+StatsTop.Size = UDim2.new(0, 217, 0, 10)
+
+SpeedLabel.Name = "SpeedLabel"
+SpeedLabel.Parent = Stats
+SpeedLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedLabel.BackgroundTransparency = 1.000
+SpeedLabel.Position = UDim2.new(0.825077415, 0, 0.934703767, 0)
+SpeedLabel.Size = UDim2.new(0, 217, 0, 45)
+SpeedLabel.Font = Enum.Font.SourceSans
+SpeedLabel.Text = "Speed"
+SpeedLabel.TextColor3 = Color3.fromRGB(17, 112, 255)
+SpeedLabel.TextScaled = true
+SpeedLabel.TextSize = 14.000
+SpeedLabel.TextWrapped = true
+while true do wait()
+local lplr = game.Players.LocalPlayer
+if lplr.Character.Humanoid.WalkSpeed > 16 then
+		SpeedLabel.Text = "Sprinting : True"
+	elseif lplr.Character.Humanoid.WalkSpeed == 16 then
+		SpeedLabel.Text = "Sprinting : False"
+		end
+	end
